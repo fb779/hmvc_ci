@@ -1,0 +1,68 @@
+.ap_body {
+	min-width: 800px;
+	max-width: 1024px;
+
+	margin: 0 auto;
+}
+
+.ap_header {
+	min-height: 100px;
+}
+
+.ap_footer {
+	min-height: 60px;
+}
+
+.ap_footer_text {
+	border: solid 1px red;
+}
+
+.ap_footer_social {
+	border: solid 1px blue;
+}
+
+.ap_row {
+	margin-right: 0;
+	margin-left: 0;
+}
+.img_logo {
+	//margin: auto auto;
+	//width: 90%;
+}
+
+.ap_line {
+	background-color: #DFDFDF;
+	min-height: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ap_content {
+
+	min-height: 35em;
+}
+
+#header {
+	position: relative;
+}
+
+#header section {
+	display: inline-block;;
+}
+
+.ap_logo {
+	width: 10%;
+}
+
+.ap_text {
+	float: right;
+	right: 0;
+}
+
+.error {
+  border-color: red;
+}
+ 
+.warning {
+  border-color: yellow;
+}

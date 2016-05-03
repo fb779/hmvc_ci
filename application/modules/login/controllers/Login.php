@@ -2,11 +2,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 //header ('Content-type: text/html; charset=utf-8');
 
-class Home extends MX_Controller {
+class Login extends MX_Controller {
 	
 	public function __construct() {
 		parent::__construct();
-
 	}
 	
 	public function index()
@@ -14,14 +13,9 @@ class Home extends MX_Controller {
 		$datos['dt'] = array(
 			'static' => BASE_STATICS, 
 			'title' => 'E.T - ESPECIAL ',
-			'navigate' => array(	
-				array('modulo' => 'Directorio1', 'direc' => 'empresas'),
-				array('modulo' => 'Usuarios', 'direc' => 'usuarios'),
-				
-			),
 		);
 		
-		$datos['page'] = 'prueba';
+		$datos['page'] = 'form_login';
 		$datos['dt_page'] = array(
 			'url_login' => BASE_URL . 'login',
 			'parrafo' => 'Parrafo de verificacion para la carga de contenido de la pagina ',
@@ -30,7 +24,7 @@ class Home extends MX_Controller {
 		$this->parser->parse('loadTemplates', $datos, TRUE);
 
 
-		/*$dt['sol'] = utf8_encode('ññññññ');
+		/*$dt['sol'] = utf8_encode('Ã±Ã±Ã±Ã±Ã±Ã±');
 		$dt['static'] = BASE_STATICS;
 		$dt['title'] = 'E.T - ESPECIAL ';
 		$this->parser->parse('plantilla', $dt);*/
