@@ -18,7 +18,7 @@ class Login extends MX_Controller {
 		$datos['page'] = 'form_login';
 		$datos['dt_page'] = array(
 			'url_login' => BASE_URL . 'login',
-			'parrafo' => 'Parrafo de verificacion para la carga de contenido de la pagina ',
+			'parrafo' => 'Parrafo de verificacion para la carga de contenido de la pagina..... ',
 		);
 
 		$this->parser->parse('loadTemplates', $datos, TRUE);
