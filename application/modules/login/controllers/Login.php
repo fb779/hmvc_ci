@@ -14,6 +14,11 @@ class Login extends MX_Controller {
 		$datos['dt'] = array(
 			'static' => BASE_STATICS, 
 			'title' => 'E.T - ESPECIAL ',
+			'navigate' => array(	
+				array('modulo' => 'Directorio1', 'direc' => 'empresas'),
+				array('modulo' => 'Usuarios', 'direc' => 'home'),
+				
+			),
 		);
 		
 		$datos['page'] = 'form_login';
@@ -22,13 +27,7 @@ class Login extends MX_Controller {
 			'parrafo' => 'Parrafo de verificacion para la carga de contenido de la pagina..... ',
 		);
 
-		$this->parser->parse('loadTemplates', $datos, TRUE);
-
-
-		/*$dt['sol'] = utf8_encode('ññññññ');
-		$dt['static'] = BASE_STATICS;
-		$dt['title'] = 'E.T - ESPECIAL ';
-		$this->parser->parse('plantilla', $dt);*/
+		$this->parser->parse('loadTemplates', $datos);
 	}
 
 	

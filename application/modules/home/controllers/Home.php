@@ -16,8 +16,7 @@ class Home extends MX_Controller {
 			'title' => 'E.T - ESPECIAL ',
 			'navigate' => array(	
 				array('modulo' => 'Directorio1', 'direc' => 'empresas'),
-				array('modulo' => 'Usuarios', 'direc' => 'usuarios'),
-				
+				//array('modulo' => 'Usuarios', 'direc' => 'usuarios'),
 			),
 		);
 		
@@ -28,11 +27,5 @@ class Home extends MX_Controller {
 		);
 
 		$this->parser->parse('loadTemplates', $datos, TRUE);
-
-
-		/*$dt['sol'] = utf8_encode('сссссс');
-		$dt['static'] = BASE_STATICS;
-		$dt['title'] = 'E.T - ESPECIAL ';
-		$this->parser->parse('plantilla', $dt);*/
 	}
 }
