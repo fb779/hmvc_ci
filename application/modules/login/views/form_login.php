@@ -31,7 +31,7 @@
 			<span class="input-group-addon" ng-show="userForm.password.$invalid && userForm.password.$touched"><span class="glyphicon glyphicon-asterisk" ></span></span>
 		</div>
 	</div>
-	<button class="btn btn-primary" ng-click="save()">Add User</button>
+	<button class="btn btn-primary" ng-click="save()">Iniciar Sesion</button>
 	
 </form>
 </div>

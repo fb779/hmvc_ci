@@ -10,6 +10,7 @@ class Login extends MX_Controller {
 	
 	public function index()
 	{
+
 		$datos['dt'] = array(
 			'static' => BASE_STATICS, 
 			'title' => 'E.T - ESPECIAL ',
@@ -29,4 +30,6 @@ class Login extends MX_Controller {
 		$dt['title'] = 'E.T - ESPECIAL ';
 		$this->parser->parse('plantilla', $dt);*/
 	}
+
+	
 }
