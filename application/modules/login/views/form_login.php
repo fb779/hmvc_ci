@@ -14,22 +14,26 @@
 		</div>
 	</form-->
 <div id="content" class="ap_content row text-center" ng-controller="NewUserController">
-<form name="userForm" class="" novalidate>
-	<div class="form-group row" ng-class="{ 'has-error': userForm.name.$invalid && userForm.name.$touched }" >
-		<div class="input-group col-md-6">
-			<span class="input-group-addon"><span class="glyphicon glyphicon-user" ></span></span>
+<form action="{{url}}" name="userForm" class="form-horizontal" novalidate>
+	<div class="form-group" >
+		<div class="col-md-3"></div>
+		<div class="input-group col-md-6" ng-class="{ 'has-error': userForm.name.$invalid && userForm.name.$touched }">
+			<div class="input-group-addon"><span class="glyphicon glyphicon-user" ></span></div>
 			<input type="text" class="form-control" name="name" ng-model="user.name" placeholder="Username" required>
-			<span class="input-group-addon" ng-show="userForm.name.$invalid && userForm.name.$touched"><span class="glyphicon glyphicon-asterisk" ></span></span>
+			<div class="input-group-addon" ng-show="userForm.name.$invalid && userForm.name.$touched"><span class="glyphicon glyphicon-asterisk"></span></div>	
 		</div>
+		<div class="col-md-3"></div>
 	</div>
 
 
-	<div class="form-group row" ng-class="{ 'has-error': userForm.password.$invalid && userForm.password.$touched }" >
-		<div class="input-group col-md-6">
+	<div class="form-group">
+		<div class="col-md-3"></div>
+		<div class="input-group col-md-6" ng-class="{ 'has-error': userForm.password.$invalid && userForm.password.$touched }" >
 			<span class="input-group-addon"><span class="glyphicon glyphicon-pencil" ></span></span>
 			<input type="password" class="form-control" name="password" ng-model="user.password" placeholder="Password" required>
 			<span class="input-group-addon" ng-show="userForm.password.$invalid && userForm.password.$touched"><span class="glyphicon glyphicon-asterisk" ></span></span>
 		</div>
+		<div class="col-md-3"></div>
 	</div>
 	<button class="btn btn-primary" ng-click="save()">Iniciar Sesion</button>
 	

@@ -14,11 +14,10 @@ class Login extends MX_Controller {
 		$datos['dt'] = array(
 			'static' => BASE_STATICS, 
 			'title' => 'E.T - ESPECIAL ',
-			'navigate' => array(	
-				array('modulo' => 'Directorio1', 'direc' => 'empresas'),
-				array('modulo' => 'Usuarios', 'direc' => 'home'),
-				
-			),
+			// 'navigate' => array(	
+			// 	array('modulo' => 'Directorio1', 'direc' => 'empresas'),
+			// 	array('modulo' => 'Usuarios', 'direc' => 'home'),
+			// ),
 		);
 		
 		$datos['page'] = 'form_login';

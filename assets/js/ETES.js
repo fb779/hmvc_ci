@@ -4,10 +4,7 @@ app.controller('login', ['$scope', function($scope){
 	$scope.formData = {};
 
 	$scope.save = function(){
-
-
-
-		if (!$scope.formData.hasOwnProperty('name') && !$scope.formData.hasOwnProperty('pass'))
+		if (!$scope.formData.name && !$scope.formData.pass)
 			console.log($scope.formData);
 	};
 
@@ -24,8 +21,10 @@ module.controller('NewUserController', function($scope) {
 		if ($scope.userForm.$valid) {
 			alert('User saved');
 			$scope.reset();
+
 		} else {
-			alert("There are invalid fields");
+			alert("Campos sin diligenciar");
+			$scope.url = '#';
 		}
 	};
 	
