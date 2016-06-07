@@ -104,5 +104,6 @@ define('BASE_URL', $base_url);
 define('BASE_URI', $base_uri);
 define('APPPATH_URI', BASE_URI . APPPATH);
 define('BASE_STATICS', BASE_URL . 'assets/');
-
+define('TITULO_APP', 'Titulo de la encuesta o aplicacion Archivo constantes');
 unset($base_url, $base_uri);
+

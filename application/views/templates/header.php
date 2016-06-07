@@ -1,25 +1,20 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>{title}</title>
+	
+	<link rel="stylesheet" type="text/css" href="{static}css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{static}css/styles.css">
 	<!--link rel="stylesheet" type="text/css" href="css/normalizer.css"-->
 	<script src="{static}js/jquery-1.12.3.min.js" type="text/javascript"></script>
 	<script src="{static}js/angular.min.js" type="text/javascript"></script>
 	<script src="{static}js/ETES.js" type="text/javascript"></script>
-
-	<link rel="stylesheet" type="text/css" href="{static}css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="{static}css/styles.css">
-	
-
-	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" type="text/javascript"></script-->
 	<script src="{static}js/bootstrap.min.js" type="text/javascript"></script>
-
-	<!--script src="js/funciones.js" type="text/javascript"></script-->
 	
+	<title>{title}</title>
 </head>
 
 <body ng-app="app_etes">
-	<div class="ap_body conteiner">
+	<div class="ap_body container">
 	<div class="containe">
 		<div id="header" class="row">
 			<section class="ap_logo text-center">

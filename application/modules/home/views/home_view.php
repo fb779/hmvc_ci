@@ -1,4 +1,4 @@
-<?php //header ('Content-type: text/html; charset=utf-8'); 
+<?php header ('Content-type: text/html; charset=utf-8'); 
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="es">
@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-	<h1>Welcome to CodeIgniter! <?php echo $sol; ?> </h1>
+	<h1>Welcome to CodeIgniter! </h1>
 	
 	<div id="body">
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>

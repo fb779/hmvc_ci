@@ -1,14 +1,22 @@
 <?php
-	$this->parser->parse("templates/header.php", $dt);
-	if (isset($dt['navigate'])){
-		$this->parser->parse("templates/navigation.php", $dt);
+	if (isset($header)){
+		$this->parser->parse("templates/header.php", $header);
 	}
 	
-	if (isset($page)){
-		$this->parser->parse($page, $dt_page);
+
+	if (isset($menu)){
+		$this->parser->parse("templates/navigation.php", $menu);
+	}
+	
+	if (isset($template)){
+		$this->parser->parse($template, $dt);
 	} 
 
-	$this->parser->parse("templates/footer.php", array());
+	if (isset($footer)){
+		$this->parser->parse("templates/footer.php", $footer);	
+	} else {
+		$this->parser->parse("templates/footer.php", array());
+	}
 
 	// $this->load->view("templates/header.php");
 	// $this->load->view("templates/navigation.php");
